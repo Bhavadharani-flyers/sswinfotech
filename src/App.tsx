@@ -1,7 +1,7 @@
-import "./App.css";
+// import "./index.css";
 
 function App() {
-  return <>hello</>;
+  return <div className="text-green-600 font-bold underline ">SSW</div>;
 }
 
 export default App;
