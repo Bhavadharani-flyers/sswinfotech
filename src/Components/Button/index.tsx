@@ -1,11 +1,11 @@
 type ButtonProps = {
-  Home: string;
+  ButtonName: string;
 };
 
-export const Button = ({ Home }: ButtonProps) => {
+export const Button = ({ ButtonName }: ButtonProps) => {
   return (
     <div>
-      <button>{Home}</button>
+      <button>{ButtonName}</button>
     </div>
   );
 };
