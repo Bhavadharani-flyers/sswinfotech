@@ -1,7 +1,15 @@
-// import "./index.css";
+import "./App.css";
+import { Tab } from "./Components/Button/Tab";
+import { Home } from "./Pages/Home";
+import { Routerwrap } from "./routes";
 
 function App() {
-  return <div className="text-green-600 font-bold underline ">SSW</div>;
+  return (
+    <div>
+      {/* <Tab /> */}
+      <Routerwrap />
+    </div>
+  );
 }
 
 export default App;
