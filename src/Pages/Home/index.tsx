@@ -1,32 +1,32 @@
 import { Link } from "react-router-dom";
 import { Tab } from "../../Components/Button/Tab";
+import Team from "./Team";
+import Aboutus from "./Aboutus";
 
 export const Home = () => {
   return (
     <div className=" text-white ">
-      <div className="h-screen fixed top-0 opacity-80 ">
+      <div className="">
         {/* <img src={Bgimg} /> */}
         <div className="flex flex-row"></div>
       </div>
-      <main className="flex flex-row gap-5 items-center absolute ">
+      <section className="flex flex-row gap-5 items-center pl-16">
         <div className="flex flex-col pl-5">
-          <p className="text-9xl tracking-tighter pt-[30%] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-200">
+          <p className="text-9xl tracking-tighter pt-[10%] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-200">
             R&D
           </p>
+          <p className="text-left mr-[50%]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            dolorem beatae nesciunt tempora. Possimus, libero deserunt?
+            Obcaecati ipsum a officiis sequi eum numquam quibusdam, dignissimos
+            harum in, vitae vel molestiae.
+          </p>
+          <div className="pt-2">
+            <button className="box-border h-10 w-24 bg-[#22d3ee] rounded-lg ">
+              Get Started
+            </button>
+          </div>
 
-          <p className="text-left ">
-            Lorem ipsum dolor sit amet consectetur adipisicing
-          </p>
-          <p className="text-left ">
-            Lorem ipsum dolor sit amet consectetur adipisicing vuijjk
-          </p>
-          <p className="text-left ">Lorem ipsum dolor ipsum dolor</p>
-          <p className="text-left ">
-            Lorem ipsum dolor sit amet consectetur adipisicing
-          </p>
-          <button className="box-border h-10 w-24 bg-[#22d3ee] rounded-lg">
-            Get Started
-          </button>
           {/* <div className="pt-8 gap-6 flex flex-row ">
             <Link
               target="_blank"
@@ -40,7 +40,13 @@ export const Home = () => {
             </div>
           </div> */}
         </div>
-      </main>
+      </section>
+      <section className="pt-[15%]">
+        <Team />
+      </section>
+      <section className="pt-[15%]">
+        <Aboutus />
+      </section>
     </div>
   );
 };
