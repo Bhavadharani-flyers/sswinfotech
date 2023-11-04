@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { cryptobg, cryptobg1 } from "../../assets";
+import { cryptobg, cryptobg1 } from "../../assets/images";
 
 export const Coins = () => {
   return (
